@@ -162,9 +162,9 @@
 
       * What kind of errors are you seeing?  Location within the frame?  
 
-            *    Stripes across screen vs. fragments at edge of frame, etc.    
-       
-            *    Are they located in the same place?  Or are they spread throughout the tape?
+      * Stripes across screen vs. fragments at edge of frame, etc.
+
+      * Are they located in the same place?  Or are they spread throughout the tape?
 
    * How many errors are there?  General guidelines 
 
@@ -192,31 +192,22 @@
 
 10. If needed, use FFMPEG to create a small clip that best shows the errors seen
 
+```
     ffmpeg -i FILE -c copy -f rawvideo -map 0:v:0 -ss 00:00:00 -to 00:00:00 FILE.title.dv
+```
 
-      * ffmpeg = starts ffmpeg
-
-      * -i = input file 
-
-      * FILE = path to file that is being trimmed 
-
-      * -c = Codec name 
-
-      * copy = copies codec name 
-
-      * -f = force format 
-
-      * rawvideo = keeps Codec the same as original file 
-
-      * -map = manual control of stream selection in each output file 
-
-      * 0:v:0 = stream specifier (v matches all video streams)
-
-      * -ss = decodes but discards input until the timestamps reach position
-
-      * 00:00:00 -to 00:00:00 = timespan of clip 
-
-      * FILE.title.dv = name of final file and location to be saved to 
+   - ffmpeg = starts ffmpeg
+   - -i = input file 
+   - FILE = path to file that is being trimmed 
+   - -c = Codec name 
+   - copy = copies codec name 
+   - -f = force format 
+   - rawvideo = keeps Codec the same as original file 
+   - -map = manual control of stream selection in each output file 
+   - 0:v:0 = stream specifier (v matches all video streams)
+   - -ss = decodes but discards input until the timestamps reach position
+   - 00:00:00 -to 00:00:00 = timespan of clip 
+   - FILE.title.dv = name of final file and location to be saved to 
 
 
 ## Packaging and Verification
