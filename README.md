@@ -115,8 +115,8 @@
 
    * Run the following command in Terminal: 
 
-      dvrescue $drag_first_take_file_here -m $drag_file_output_file_here
-      
+    dvrescue $drag_first_take_file_here -m $drag_file_output_file_here
+
          * dvrescue starts the command
          
          * Replace $drag_first_take_file_here with path to Take 1 of tape 
