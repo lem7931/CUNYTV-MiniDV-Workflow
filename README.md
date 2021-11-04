@@ -38,27 +38,27 @@
 ###### Overview - This process establishes what tapes are being digitized and their condition.  It also helps you stay organized!  
 
 1. Create new Airtable for tracking metadata on each item.  Table should include:
-   1. Format ID
-   2. Status
-   3. Drive 
-   4. Digitization Notes 
-   5. Date of Digitization 
-   6. Quality Control (QC) Notes
-   7. Date of QC
-   8. PBCore Title Series
-   9. PBCore Title Episode
-   10. Description (if any) 
+   * Format ID
+   * Status
+   * Drive 
+   * Digitization Notes 
+   * Date of Digitization 
+   * Quality Control (QC) Notes
+   * Date of QC
+   * PBCore Title Series
+   * PBCore Title Episode
+   * Description (if any) 
 
 2. Create new folders in appropriate drives - always remember to check how much space is left!  
-   1. GDRIVE10A
-   2. GDRIVE10B 
+   * GDRIVE10A
+   * GDRIVE10B 
 
 3. Clean MiniDV players daily with head-cleaning tape
-   1. Rewind tape to beginning, then play through (should take less than 5 minutes)
+   * Rewind tape to beginning, then play through (should take less than 5 minutes)
 
 4. Assess condition of tapes to be transferred 
-   1. Fully rewound?  Are the labels intact?  Do you notice any mold or flaking?  In proper housing?  Any weird smells?  Just plain broken?  
-   2. If any tapes appear in bad condition, set aside for further assessment.  DO NOT try to transfer or play them back.  
+   * Fully rewound?  Are the labels intact?  Do you notice any mold or flaking?  In proper housing?  Any weird smells?  Just plain broken?  
+   * If any tapes appear in bad condition, set aside for further assessment.  DO NOT try to transfer or play them back.  
 
 
 ## Transferring MiniDV
@@ -67,30 +67,30 @@
 
 1. Insert tape face up into the player.  Push tape into the player until sucked in.  
 
-3. Open new Terminal window and run appropriate command
-   1. ./dvc -------> script for two MDV transfers
-   2. ./dvc_2 -----> script for only 1 MDV transfer 
+2. Open new Terminal window and run appropriate command
+   * ./dvc -------> script for two MDV transfers
+   * ./dvc_2 -----> script for only 1 MDV transfer 
 
-4. Select an input device by number or enter ‘S’ to check the status of each device
-   1. [0] DV-VCR (Sony HVR-M15U)
-   2. [1] HDV-VCR (Sony HVR-M15U)
-   3. [2] DV-VCR (Sony DSR-45)
+3. Select an input device by number or enter ‘S’ to check the status of each device
+   * [0] DV-VCR (Sony HVR-M15U)
+   * [1] HDV-VCR (Sony HVR-M15U)
+   * [2] DV-VCR (Sony DSR-45)
 
-5. Enter tape ID and press enter 
-   1. Can be found on tape or case 
+4. Enter tape ID and press enter 
+   * Can be found on tape or case 
 
-6. Add output folder and press enter
-   1. Where you want these transfers to be saved 
-   2. Drag + drop location directly into Terminal window 
-7. Transfer will begin.  Time varies based on tape contents and the command run.
+5. Add output folder and press enter
+   * Where you want these transfers to be saved 
+   * Drag + drop location directly into Terminal window 
+6. Transfer will begin.  Time varies based on tape contents and the command run.
 
-9. Once tape has finished and is fully rewound, double check the size of the file.  
-   1. If two transfers were run, these should be very close in size (only off by a few MB)  
-   2. If one transfer ran, compare new file to old ones (should be same/very close in size) 
+7. Once tape has finished and is fully rewound, double check the size of the file.  
+   * If two transfers were run, these should be very close in size (only off by a few MB)  
+   * If one transfer ran, compare new file to old ones (should be same/very close in size) 
 
-10. If sizes look ok, move onto the next tape.
+8. If sizes look ok, move onto the next tape.
 
-12. Repeat until the batch is done and then move onto the next phase.
+9. Repeat until the batch is done and then move onto the next phase.
 
 
 ## DVRescue + DVPlay 
@@ -99,133 +99,132 @@
 
 1. Navigate to folder you want to work in using the Terminal 
 
-3. Create new folder for each tape and its associated files to live in 
-   1. Should have:
-   2. Two .dv files which will be subsequently merged together
-   3. Two .vtt files
-   4. Two .xml files 
+2. Create new folder for each tape and its associated files to live in 
+   * Should have:
+   * Two .dv files which will be subsequently merged together
+   * Two .vtt files
+   * Two .xml files 
 
-4. Double-check sizes of two files to be merged
-   1. If one file is significantly bigger than the other, mark as SUS skip to last step of this section
-   2. If only bigger by a small amount (no more than .1 MB) then continue 
+3. Double-check sizes of two files to be merged
+   * If one file is significantly bigger than the other, mark as SUS skip to last step of this section
+   * If only bigger by a small amount (no more than .1 MB) then continue 
 
-5. Play first and last 30 seconds of both videos to get an understanding of the content, paying close attention to any tape errors you may see
+4. Play first and last 30 seconds of both videos to get an understanding of the content, paying close attention to any tape errors you may see
 
-7. Merging Files with DVRescue 
+5. Merging Files with DVRescue 
 
-   1. Run the following command in Terminal: 
+   * Run the following command in Terminal: 
 
-      1. dvrescue $drag_first_take_file_here -m $drag_file_output_file_here
+      dvrescue $drag_first_take_file_here -m $drag_file_output_file_here
       
-         1. dvrescue starts the command
+         * dvrescue starts the command
          
-         2. Replace $drag_first_take_file_here with path to Take 1 of tape 
+         * Replace $drag_first_take_file_here with path to Take 1 of tape 
 
-            1. Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_take1.dv
+            * Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_take1.dv
 
-         3. -m tells dvrescue to execute the merge command
+         * -m tells dvrescue to execute the merge command
          
-         4. Replace $drag_file_output_file_here with intended file output name
+         * Replace $drag_file_output_file_here with intended file output name
 
-            1. Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
+            * Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
 
-            3. *Remember to change ‘_take1.dv’ to ‘_merge.dv’
+            * *Remember to change ‘_take1.dv’ to ‘_merge.dv’
 
-               1. If you don’t Take 1 will be erased and transfer will need to be redone 
+               * If you don’t Take 1 will be erased and transfer will need to be redone 
 
-   2. Wait for command to finish (can take a few minutes)
+   * Wait for command to finish (can take a few minutes)
 
-   4. Confirm that merged file is same size as original files (some discretion) 
+   * Confirm that merged file is same size as original files (some discretion) 
 
-8. DVPlay 
+6. DVPlay 
 
-   1. Run the following command in Terminal: 
+   * Run the following command in Terminal: 
 
-      1. dvplay -x $drag_merged_file_here
+      dvplay -x $drag_merged_file_here
 
-         1. dvplay starts the command
+         * dvplay starts the command
 
-         3. -x tells the command to create JPEGs of every error
+         * -x tells the command to create JPEGs of every error
 
-         5. Replace $drag_merged_file_here with path to merged file 
+         * Replace $drag_merged_file_here with path to merged file 
 
-            1. Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
+            * Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
 
-   2. Wait for command to finish 
+   * Wait for command to finish 
 
-   4. Assess HTML + JPEGS that are generated
+   * Assess HTML + JPEGS that are generated
 
-      1. What kind of errors are you seeing?  Location within the frame?  
+      * What kind of errors are you seeing?  Location within the frame?  
 
-            1.    Stripes across screen vs. fragments at edge of frame, etc.    
+            *    Stripes across screen vs. fragments at edge of frame, etc.    
        
-            3.    Are they located in the same place?  Or are they spread throughout the tape?
+            *    Are they located in the same place?  Or are they spread throughout the tape?
 
-   5. How many errors are there?  General guidelines 
+   * How many errors are there?  General guidelines 
 
-      1. More than 10 errors - SUS (aka get second opinion) 
+      * More than 10 errors - SUS (aka get second opinion) 
 
-      3. More than 20 errors - FAIL
+      * More than 20 errors - FAIL
 
-      5. Less than 5 errors - PASS 
+      * Less than 5 errors - PASS 
 
-   6. Reference AVAA - https://www.avartifactatlas.com/formats/dv.html 
+   * Reference AVAA - https://www.avartifactatlas.com/formats/dv.html 
 
-   8. When in doubt, ask someone!  
+   * When in doubt, ask someone!  
 
 7. Mark folder with color to denote status and move onto next tape 
 
-   8. Pass - Green
+   * Pass - Green
 
-   10. Need Second Opinion - Yellow 
+   * Need Second Opinion - Yellow 
 
-   12. Fail - Red
-
-
-12. If needed, use FFMPEG to create a small clip that best shows the errors seen
-
-   13. ffmpeg -i FILE -c copy -f rawvideo -map 0:v:0 -ss 00:00:00 -to 00:00:00 FILE.title.dv
-
-   15. ffmpeg = starts ffmpeg
-
-   17. -i = input file 
-
-   19. FILE = path to file that is being trimmed 
-
-   21. -c = Codec name 
-
-   23. copy = copies codec name 
-
-   25. -f = force format 
-
-   27. rawvideo = keeps Codec the same as original file 
-
-   29. -map = manual control of stream selection in each output file 
-
-   31. 0:v:0 = stream specifier (v matches all video streams)
-
-   33. -ss = decodes but discards input until the timestamps reach position
-
-   35. 00:00:00 -to 00:00:00 = timespan of clip 
-
-   37. FILE.title.dv = name of final file and location to be saved to 
+   * Fail - Red
    
-26. Document findings in Airtable 
+8. Document findings in Airtable 
 
-27. Get second opinions for problematic files.  If any files need to be retransfered, refer back to Transferring MiniDV section 
+9. Get second opinions for problematic files.  If any files need to be retransfered, refer back to Transferring MiniDV section 
+
+10. If needed, use FFMPEG to create a small clip that best shows the errors seen
+
+    ffmpeg -i FILE -c copy -f rawvideo -map 0:v:0 -ss 00:00:00 -to 00:00:00 FILE.title.dv
+
+      * ffmpeg = starts ffmpeg
+
+      * -i = input file 
+
+      * FILE = path to file that is being trimmed 
+
+      * -c = Codec name 
+
+      * copy = copies codec name 
+
+      * -f = force format 
+
+      * rawvideo = keeps Codec the same as original file 
+
+      * -map = manual control of stream selection in each output file 
+
+      * 0:v:0 = stream specifier (v matches all video streams)
+
+      * -ss = decodes but discards input until the timestamps reach position
+
+      * 00:00:00 -to 00:00:00 = timespan of clip 
+
+      * FILE.title.dv = name of final file and location to be saved to 
 
 
 ## Packaging and Verification
 
 ###### Overview - This process ensures that every file is to the standards set by CUNY TV and gets files ready for their ingestion into the archive.  
 
-   1. Once all files have passed QC, packaging and verification can begin
+Once all files have passed QC, packaging and verification can begin
 
-   3. Packaging 
+   1. Packaging 
 
-   5. Run the following command in a new Terminal window:
+        * Run the following command in a new Terminal window:
 
-   7. dvpackager -v $drag_merged_file_here
+          dvpackager -v $drag_merged_file_here
 
    9. Make sure .mov file is slightly larger than DV file and that audio is in sync 
 
