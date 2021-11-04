@@ -144,17 +144,17 @@
 
    * Run the following command in Terminal: 
 
-```
-      dvplay -x $drag_merged_file_here
-```
 
-         * dvplay starts the command
+      dvplay -x $drag_merged_file_here  
 
-         * -x tells the command to create JPEGs of every error
 
-         * Replace $drag_merged_file_here with path to merged file 
+      * dvplay starts the command
 
-            * Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
+      * -x tells the command to create JPEGs of every error
+
+      * Replace $drag_merged_file_here with path to merged file 
+
+        * Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
 
    * Wait for command to finish 
 
