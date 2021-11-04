@@ -93,7 +93,7 @@
 9. Repeat until the batch is done and then move onto the next phase.
 
 
-## DVRescue + DVPlay 
+## Quality Control ~ DVRescue + DVPlay 
 
 ###### Overview - This process merges two MDV transfers into one file and then assesses any errors that may be present in the file.  
 
@@ -115,23 +115,26 @@
 
    * Run the following command in Terminal: 
 
-    dvrescue $drag_first_take_file_here -m $drag_file_output_file_here
+   ```
+   dvrescue $drag_first_take_file_here -m $drag_file_output_file_here
+   ```
 
-         * dvrescue starts the command
+        - dvrescue starts the command
          
-         * Replace $drag_first_take_file_here with path to Take 1 of tape 
+        - Replace $drag_first_take_file_here with path to Take 1 of tape 
 
-            * Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_take1.dv
+        - Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_take1.dv
 
-         * -m tells dvrescue to execute the merge command
+        - -m tells dvrescue to execute the merge command
          
-         * Replace $drag_file_output_file_here with intended file output name
+        - Replace $drag_file_output_file_here with intended file output name
 
-            * Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
+        - Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
 
-            * *Remember to change ‘_take1.dv’ to ‘_merge.dv’
+        - Remember to change _take1.dv to _merge.dv
 
-               * If you don’t Take 1 will be erased and transfer will need to be redone 
+        - If you don’t Take 1 will be erased and transfer will need to be redone 
+
 
    * Wait for command to finish (can take a few minutes)
 
@@ -141,7 +144,9 @@
 
    * Run the following command in Terminal: 
 
+```
       dvplay -x $drag_merged_file_here
+```
 
          * dvplay starts the command
 
