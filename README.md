@@ -17,9 +17,13 @@ Definitions:
 Things to keep in mind
 
 * Make sure there is enough space on your hard drive before you begin.  Files will not transfer/merge correctly if you run out of space.  
+
 * Remember to take notes and update the metadata as you go!  
-   * Problems are inevitable.  Keeping track of any errors you run into will help you (and others) solve problems faster.  
+
+* Problems will occur.  Keeping track of any errors you run into will help you (and others) solve problems faster. 
+
 * Errors are inevitable!  Mistakes will be made!  Be gentle not only on the tapes but also on yourself 🥰 
+
 * When in doubt, ask for help! 
 
 
@@ -38,11 +42,14 @@ Overview - This process establishes what tapes are being digitized and their con
    8. PBCore Title Series
    9. PBCore Title Episode
    10. Description (if any) 
+
 2. Create new folders in appropriate drives - always remember to check how much space is left!  
    1. GDRIVE10A
    2. GDRIVE10B 
+
 3. Clean MiniDV players daily with head-cleaning tape
    1. Rewind tape to beginning, then play through (should take less than 5 minutes)
+
 4. Assess condition of tapes to be transferred 
    1. Fully rewound?  Are the labels intact?  Do you notice any mold or flaking?  In proper housing?  Any weird smells?  Just plain broken?  
    2. If any tapes appear in bad condition, set aside for further assessment.  DO NOT try to transfer or play them back.  
@@ -53,24 +60,31 @@ Transferring MiniDV
 Overview - This process takes the contents of the MiniDV tape and transfers it onto a computer 
 
 1. Insert tape face up into the player.  Push tape into the player until sucked in.  
-2. Open new Terminal window and run appropriate command
+
+3. Open new Terminal window and run appropriate command
    1. ./dvc -------> script for two MDV transfers
    2. ./dvc_2 -----> script for only 1 MDV transfer 
-3. Select an input device by number or enter ‘S’ to check the status of each device
+
+4. Select an input device by number or enter ‘S’ to check the status of each device
    1. [0] DV-VCR (Sony HVR-M15U)
    2. [1] HDV-VCR (Sony HVR-M15U)
    3. [2] DV-VCR (Sony DSR-45)
-4. Enter tape ID and press enter 
+
+5. Enter tape ID and press enter 
    1. Can be found on tape or case 
-5. Add output folder and press enter
+
+6. Add output folder and press enter
    1. Where you want these transfers to be saved 
    2. Drag + drop location directly into Terminal window 
-6. Transfer will begin.  Time varies based on tape contents and the command run.
-7. Once tape has finished and is fully rewound, double check the size of the file.  
+7. Transfer will begin.  Time varies based on tape contents and the command run.
+
+9. Once tape has finished and is fully rewound, double check the size of the file.  
    1. If two transfers were run, these should be very close in size (only off by a few MB)  
    2. If one transfer ran, compare new file to old ones (should be same/very close in size) 
-8. If sizes look ok, move onto the next tape.
-9. Repeat until the batch is done and then move onto the next phase.
+
+10. If sizes look ok, move onto the next tape.
+
+12. Repeat until the batch is done and then move onto the next phase.
 
 
 DVRescue + DVPlay 
@@ -78,16 +92,20 @@ DVRescue + DVPlay
 Overview - This process merges two MDV transfers into one file and then assesses any errors that may be present in the file.  
 
 1. Navigate to folder you want to work in using the Terminal 
-2. Create new folder for each tape and its associated files to live in 
+
+3. Create new folder for each tape and its associated files to live in 
    1. Should have:
    2. Two .dv files which will be subsequently merged together
    3. Two .vtt files
    4. Two .xml files 
-3. Double-check sizes of two files to be merged
+
+4. Double-check sizes of two files to be merged
    1. If one file is significantly bigger than the other, mark as SUS skip to last step of this section
    2. If only bigger by a small amount (no more than .1 MB) then continue 
-4. Play first and last 30 seconds of both videos to get an understanding of the content, paying close attention to any tape errors you may see
-5. Merging Files with DVRescue 
+
+5. Play first and last 30 seconds of both videos to get an understanding of the content, paying close attention to any tape errors you may see
+
+7. Merging Files with DVRescue 
    1. Run the following command in Terminal: 
       1. dvrescue $drag_first_take_file_here -m $drag_file_output_file_here
          1. dvrescue starts the command
@@ -100,7 +118,8 @@ Overview - This process merges two MDV transfers into one file and then assesses
                1. If you don’t Take 1 will be erased and transfer will need to be redone 
    2. Wait for command to finish (can take a few minutes)
    3. Confirm that merged file is same size as original files (some discretion) 
-6. DVPlay 
+
+8. DVPlay 
    1. Run the following command in Terminal: 
       1. dvplay -x $drag_merged_file_here
          1. dvplay starts the command
@@ -110,34 +129,42 @@ Overview - This process merges two MDV transfers into one file and then assesses
    2. Wait for command to finish 
    3. Assess HTML + JPEGS that are generated
       1. What kind of errors are you seeing?  Location within the frame?  
-         1. Stripes across screen vs. fragments at edge of frame, etc. 
-            1.               2.               3.      2. Are they located in the same place?  Or are they spread throughout the tape?  
+            1.    Stripes across screen vs. fragments at edge of frame, etc.            
+            2.    Are they located in the same place?  Or are they spread throughout the tape?
    3. How many errors are there?  General guidelines 
-   1. More than 10 errors - SUS (aka get second opinion) 
-   2. More than 20 errors - FAIL
-   3. Less than 5 errors - PASS 
+      1. More than 10 errors - SUS (aka get second opinion) 
+      2. More than 20 errors - FAIL
+      3. Less than 5 errors - PASS 
    4. Reference AVAA - https://www.avartifactatlas.com/formats/dv.html 
    5. When in doubt, ask someone!  
-   4. Mark folder with color to denote status and move onto next tape 
-   1. Pass - Green
-   2. Need Second Opinion - Yellow 
-   3. Fail - Red
-   5. If needed, use FFMPEG to create a small clip that best shows the errors seen
-   1. ffmpeg -i FILE -c copy -f rawvideo -map 0:v:0 -ss 00:00:00 -to 00:00:00 FILE.title.dv
-   1. ffmpeg = starts ffmpeg
-   2. -i = input file 
-   3. FILE = path to file that is being trimmed 
-   4. -c = Codec name 
-   5. copy = copies codec name 
-   6. -f = force format 
-   7. rawvideo = keeps Codec the same as original file 
-   8. -map = manual control of stream selection in each output file 
-   9. 0:v:0 = stream specifier (v matches all video streams)
-   10. -ss = decodes but discards input until the timestamps reach position
-   11. 00:00:00 -to 00:00:00 = timespan of clip 
-   12. FILE.title.dv = name of final file and location to be saved to 
-   6. Document findings in Airtable 
-   7. Get second opinions for problematic files.  If any files need to be retransfered, refer back to Transferring MiniDV section 
+
+7. Mark folder with color to denote status and move onto next tape 
+
+   8. Pass - Green
+
+   10. Need Second Opinion - Yellow 
+
+   12. Fail - Red
+
+
+12. If needed, use FFMPEG to create a small clip that best shows the errors seen
+   13. ffmpeg -i FILE -c copy -f rawvideo -map 0:v:0 -ss 00:00:00 -to 00:00:00 FILE.title.dv
+   14. ffmpeg = starts ffmpeg
+   15. -i = input file 
+   16. FILE = path to file that is being trimmed 
+   17. -c = Codec name 
+   18. copy = copies codec name 
+   19. -f = force format 
+   20. rawvideo = keeps Codec the same as original file 
+   21. -map = manual control of stream selection in each output file 
+   22. 0:v:0 = stream specifier (v matches all video streams)
+   23. -ss = decodes but discards input until the timestamps reach position
+   24. 00:00:00 -to 00:00:00 = timespan of clip 
+   25. FILE.title.dv = name of final file and location to be saved to 
+   
+26. Document findings in Airtable 
+
+27. Get second opinions for problematic files.  If any files need to be retransfered, refer back to Transferring MiniDV section 
 
 
 Packaging and Verification
