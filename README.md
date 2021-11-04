@@ -226,50 +226,49 @@ Once all files have passed QC, packaging and verification can begin
 
           dvpackager -v $drag_merged_file_here
 
-   9. Make sure .mov file is slightly larger than DV file and that audio is in sync 
+        * Make sure .mov file is slightly larger than DV file and that audio is in sync 
 
-   11. Keep Take 1+2 xml 
+          * Keep Take 1+2 xml 
 
-   13. Keep new .mov 
+          * Keep new .mov 
 
-   15. Keep Merged .dv 
-   16. Verification 
+          * Keep Merged .dv
 
-   18. checksumpackage -c $package
+   2. Verification 
+
+        * checksumpackage -c $package
   
-   20. verifytree $package 
+        * verifytree $package 
 
-   22. No capture file/submission documentation in the wrong place?
+          * No capture file/submission documentation in the wrong place?
 
-   24. Run aipupgrade on list of packages
+            * Run aipupgrade on list of packages
 
-   26. Will ask you what type of package, pick Preservation-Video 
+            * Will ask you what type of package, pick Preservation-Video 
 
-   28. Verification Cont. 
+        * verifypackage -a (best run overnight) 
 
-   30. verifypackage -a (best run overnight) 
+          * If any files fail, delete service file and youtube access copy 
 
-   32. If any files fail, delete service file and youtube access copy 
+            * Then create new ones:
 
-   34. Then create new ones:
+            * makebroadcast $drag_package_here
 
-   36. makebroadcast $drag_package_here
+            * makeyoutube $drag_package_here 
 
-   38. makeyoutube $drag_package_here 
+          * Double-check:
 
-   40. Double-check:
+            * verifypackage -a (overnight again)
 
-   42. verifypackage -a (overnight again)
+          * Then update the checksum!  
 
-   44. Then update the checksum!  
+            * checksumpackage -v $drag_package_here
 
-   46. checksumpackage -v $drag_package_here
+            * Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating.  
 
-   48. Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating.  
+        * collectionchecksum $drag_package_here 
 
-   50. collectionchecksum $drag_package_here 
-
-   52. Run this on parent folders - gathers all checksums and creates a new manifest 
+          * Run this on parent folders - gathers all checksums and creates a new manifest 
 
 
 ## Resources:
