@@ -3,6 +3,7 @@ Mini DV Workflow
 Fall 2021
 
 Definitions:
+
 * DV:  Stands for digital video.  Format includes Digital Video Cassette, Digital 8, Video8, MiniDV, DVCA, and DVCPRO.  This format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  
 * dvrescue:  “Supports improving DV files that have already been created by allowing such files to be assessed, so that the software may selectively retry portions of the tape and incorporate any improvements into the existing file.”
    * dvmerge:  “Script that takes multiple transfers of the same tape containing errors and combines them to create one file with the best information available for each problematic frame. Part of dvrescue” 
@@ -14,6 +15,7 @@ Definitions:
 
 
 Things to keep in mind
+
 * Make sure there is enough space on your hard drive before you begin.  Files will not transfer/merge correctly if you run out of space.  
 * Remember to take notes and update the metadata as you go!  
    * Problems are inevitable.  Keeping track of any errors you run into will help you (and others) solve problems faster.  
@@ -22,7 +24,9 @@ Things to keep in mind
 
 
 Before Transferring MiniDV 
+
 Overview - This process establishes what tapes are being digitized and their condition.  It also helps you stay organized!  
+
 1. Create new Airtable for tracking metadata on each item.  Table should include:
    1. Format ID
    2. Status
@@ -45,7 +49,9 @@ Overview - This process establishes what tapes are being digitized and their con
 
 
 Transferring MiniDV
+
 Overview - This process takes the contents of the MiniDV tape and transfers it onto a computer 
+
 1. Insert tape face up into the player.  Push tape into the player until sucked in.  
 2. Open new Terminal window and run appropriate command
    1. ./dvc -------> script for two MDV transfers
@@ -68,7 +74,9 @@ Overview - This process takes the contents of the MiniDV tape and transfers it o
 
 
 DVRescue + DVPlay 
+
 Overview - This process merges two MDV transfers into one file and then assesses any errors that may be present in the file.  
+
 1. Navigate to folder you want to work in using the Terminal 
 2. Create new folder for each tape and its associated files to live in 
    1. Should have:
@@ -133,7 +141,9 @@ Overview - This process merges two MDV transfers into one file and then assesses
 
 
 Packaging and Verification
+
 Overview - This process ensures that every file is to the standards set by CUNY TV and gets files ready for their ingestion into the archive.  
+
    1. Once all files have passed QC, packaging and verification can begin
    2. Packaging 
    1. Run the following command in a new Terminal window:
@@ -164,6 +174,7 @@ Overview - This process ensures that every file is to the standards set by CUNY 
 
 
 Resources:
+
    * DVRescue Github - https://github.com/mipops/dvrescue 
    * DVRescue - https://mediaarea.net/DVRescue 
    * CUNY TV Media Micro Services - https://github.com/mediamicroservices/mm 
