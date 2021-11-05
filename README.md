@@ -222,7 +222,9 @@ Once all files have passed QC, packaging and verification can begin
 
         * Run the following command in a new Terminal window:
 
+           ```
           dvpackager -v $drag_merged_file_here
+           ``` 
 
         * Make sure .mov file is slightly larger than DV file and that audio is in sync 
 
@@ -235,7 +237,7 @@ Once all files have passed QC, packaging and verification can begin
    2. Verification 
 
         * checksumpackage -c $package
-  
+ 
         * verifytree $package 
 
           * No capture file/submission documentation in the wrong place?
