@@ -1,5 +1,6 @@
 # CUNY TV # 
-## Mini DV Workflow - Fall 2021 ##
+## Mini DV Workflow - Fall 2021 
+
 
 ###### This workflows covers the following:
   1.  Before transferring
@@ -80,7 +81,7 @@
 
 2. Open new Terminal window and run appropriate command
    * ./dvc -------> script for two MDV transfers
-   * ./dvc_2 -----> script for only 1 MDV transfer 
+   * ./dvc_2 -----> script for only one MDV transfer 
 
 3. Select an input device by number or enter ‘S’ to check the status of each device
    * [0] DV-VCR (Sony HVR-M15U)
