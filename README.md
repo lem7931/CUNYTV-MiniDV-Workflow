@@ -1,6 +1,23 @@
 # CUNY TV # 
 ## Mini DV Workflow - Fall 2021 ##
 
+###### This workflows covers the following:
+  1.  Before transferring
+
+  2.  Transferring MiniDV
+
+  3.  Quality Control using 
+    
+		* DVRescue
+    
+		* DVPlay
+    
+		* FFMPEG 
+
+  4.  Packaging
+ 
+  5.  Verification
+
 ###### Definitions:
 
 * DV:  Stands for digital video.  Format includes Digital Video Cassette, Digital 8, MiniDV, DVCA, and DVCPRO.  This format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  
@@ -12,12 +29,6 @@
    * dvplay:  “Script that plays back and visualizes the DV errors as a stack of images. Running with the -x flag will produce JPEGs instead of just playing them. Requires FFplay.”
 
 * ffmpeg:  “Open-source software able to able to decode, encode, transcode, mux, demux, stream, filter and play video/audio”
-
-* Packaging
-
-* Verification
-
-* Checksum 
 
 
 ###### Things to keep in mind
