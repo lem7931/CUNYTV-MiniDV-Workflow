@@ -125,12 +125,11 @@
 
 5. Merging Files with DVRescue 
 
-   * Run the following command in Terminal: 
-
-   ```
+   * Run the following command in Terminal:
+ 
+```
    dvrescue $drag_first_take_file_here -m $drag_file_output_file_here
-   ```
-
+```
 
         - dvrescue starts the command
          
@@ -157,11 +156,10 @@
 
    * Run the following command in Terminal: 
 
-       ```
+```
       dvplay -x $drag_merged_file_here  
-       ```
+```
        
-
       * dvplay starts the command
 
       * -x tells the command to create JPEGs of every error
@@ -233,11 +231,11 @@ Once all files have passed QC, packaging and verification can begin
    1. Packaging 
 
         * Run the following command in a new Terminal window:
-
-           ```
+        
+```
           dvpackager -v $drag_merged_file_here
-           ``` 
-
+```
+	 
         * Make sure .mov file is slightly larger than DV file and that audio is in sync 
 
           * Keep Take 1+2 xml 
@@ -248,37 +246,56 @@ Once all files have passed QC, packaging and verification can begin
 
    2. Verification 
 
-         checksumpackage -c $package
+```
+	 checksumpackage -c $package
+``` 	
  
+```
          verifytree $package 
+```
 
           * No capture file/submission documentation in the wrong place?
-
-            aipupgrade $drag_list_of_packages_here 
+	  
+```
+            aipupgrade $drag_list_of_packages_here
+```
 
             * Will ask you what type of package, pick Preservation-Video 
 
-         verifypackage -a (best run overnight) 
+```
+	 verifypackage -a (best run overnight) 
+```
 
           * If any files fail, delete service file and youtube access copy 
 
             * Then create new ones:
 
-                makebroadcast $drag_package_here
+```
+	   makebroadcast $drag_package_here
+```
 
-                makeyoutube $drag_package_here 
+```
+                makeyoutube $drag_package_here
+```
 
           * Double-check:
-
+	  
+	  
+```
               verifypackage -a (overnight again)
+```
 
           * Then update the checksum!  
 
-              checksumpackage -v $drag_package_here
+```
+	      checksumpackage -v $drag_package_here
+```
 
             * Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating.  
 
-          collectionchecksum $drag_package_here 
+```
+	  collectionchecksum $drag_package_here
+```
 
           * Run this on parent folders - gathers all checksums and creates a new manifest 
 
