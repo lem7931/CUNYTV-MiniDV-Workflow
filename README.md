@@ -231,17 +231,17 @@ Keep Take 1+2 xml
 
 ###### Verification 
 
-1.  
+Run the following command in a new Terminal window:  
 ```
 	 checksumpackage -c $package
 ``` 	
 
-2.
+Next, run this command in the same terminal window 
 ```
          verifytree $package 
 ```
 
-3.  No capture file/submission documentation in the wrong place?
+No capture file/submission documentation in the wrong place?  Run this command:
 	  
 ```
             aipupgrade $drag_list_of_packages_here
@@ -249,7 +249,7 @@ Keep Take 1+2 xml
 
 Will ask you what type of package, pick Preservation-Video 
 
-4.
+Next, run this command:
 ```
 	 verifypackage -a (best run overnight) 
 ```
@@ -280,7 +280,7 @@ Then update the checksum!
 
 Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating.  
 
-5.
+Finally, let's create a manifest with all the checksums!  
 ```
 	  collectionchecksum $drag_package_here
 ```
