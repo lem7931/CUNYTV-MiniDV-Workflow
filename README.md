@@ -217,7 +217,7 @@
 
 Once all files have passed QC, packaging and verification can begin
 
-   1. Packaging 
+###### 1. Packaging 
 
         * Run the following command in a new Terminal window:
         
@@ -227,10 +227,10 @@ Once all files have passed QC, packaging and verification can begin
 	 
 * Make sure .mov file is slightly larger than DV file and that audio is in sync 
 * Keep Take 1+2 xml 
-* Keep new .mov 
-* Keep Merged .dv
+	* Keep new .mov 
+	* Keep Merged .dv
 
-   2. Verification 
+###### 2. Verification 
 
 ```
 	 checksumpackage -c $package
