@@ -131,23 +131,15 @@
    dvrescue $drag_first_take_file_here -m $drag_file_output_file_here
 ```
 
-        - dvrescue starts the command
-         
-        - Replace $drag_first_take_file_here with path to Take 1 of tape 
-
-        - Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_take1.dv
-
-        - -m tells dvrescue to execute the merge command
-         
-        - Replace $drag_file_output_file_here with intended file output name
-
-        - Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
-
-        - Remember to change _take1.dv to _merge.dv
-
-        - If you don’t Take 1 will be erased and transfer will need to be redone 
-
-
+* dvrescue starts the command
+* Replace $drag_first_take_file_here with path to Take 1 of tape 
+	* Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_take1.dv
+* -m tells dvrescue to execute the merge command        
+* Replace $drag_file_output_file_here with intended file output name
+	* Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
+* Remember to change _take1.dv to _merge.dv
+	* If you don’t Take 1 will be erased and transfer will need to be redone 
+   
    * Wait for command to finish (can take a few minutes)
 
    * Confirm that merged file is same size as original files (some discretion) 
