@@ -21,15 +21,14 @@
 
 ###### Definitions:
 
-* DV:  Stands for digital video.  Format includes Digital Video Cassette, Digital 8, MiniDV, DVCA, and DVCPRO.  This format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  
+DV:  Stands for digital video.  Format includes Digital Video Cassette, Digital 8, MiniDV, DVCA, and DVCPRO.  This format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  
+dvrescue:  “Supports improving DV files that have already been created by allowing such files to be assessed, so that the software may selectively retry portions of the tape and incorporate any improvements into the existing file.”
 
-* dvrescue:  “Supports improving DV files that have already been created by allowing such files to be assessed, so that the software may selectively retry portions of the tape and incorporate any improvements into the existing file.”
+dvmerge:  “Script that takes multiple transfers of the same tape containing errors and combines them to create one file with the best information available for each problematic frame. Part of dvrescue” 
 
-   * dvmerge:  “Script that takes multiple transfers of the same tape containing errors and combines them to create one file with the best information available for each problematic frame. Part of dvrescue” 
+dvplay:  “Script that plays back and visualizes the DV errors as a stack of images. Running with the -x flag will produce JPEGs instead of just playing them. Requires FFplay.”
 
-   * dvplay:  “Script that plays back and visualizes the DV errors as a stack of images. Running with the -x flag will produce JPEGs instead of just playing them. Requires FFplay.”
-
-* ffmpeg:  “Open-source software able to able to decode, encode, transcode, mux, demux, stream, filter and play video/audio”
+ffmpeg:  “Open-source software able to able to decode, encode, transcode, mux, demux, stream, filter and play video/audio”
 
 
 ###### Things to keep in mind
@@ -216,20 +215,21 @@
 
 Once all files have passed QC, packaging and verification can begin
 
-###### 1. Packaging 
+###### Packaging 
 
-* Run the following command in a new Terminal window:
+Run the following command in a new Terminal window:
         
 ```
           dvpackager -v $drag_merged_file_here
 ```
 	 
-* Make sure .mov file is slightly larger than DV file and that audio is in sync 
-* Keep Take 1+2 xml 
-	* Keep new .mov 
-	* Keep Merged .dv
+Make sure .mov file is slightly larger than DV file and that audio is in sync 
 
-###### 2. Verification 
+Keep Take 1+2 xml 
+* Keep new .mov 
+* Keep Merged .dv
+
+###### Verification 
 
 1.  
 ```
