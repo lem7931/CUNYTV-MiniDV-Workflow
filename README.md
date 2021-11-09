@@ -79,8 +79,16 @@ ffmpeg:  “Open-source software able to able to decode, encode, transcode, mux,
 1. Insert tape face up into the player.  Push tape into the player until sucked in.  
 
 2. Open new Terminal window and run appropriate command
-   * ./dvc -------> script for two MDV transfers
-   * ./dvc_2 -----> script for only one MDV transfer 
+
+```
+./dvc
+```
+Script for two MDV transfers
+
+```
+./dvc_2  
+```
+Script for only one MDV transfer 
 
 3. Select an input device by number or enter ‘S’ to check the status of each device
    * [0] DV-VCR (Sony HVR-M15U)
