@@ -121,9 +121,9 @@
    * If one file is significantly bigger than the other, mark as SUS skip to last step of this section
    * If only bigger by a small amount (no more than .1 MB) then continue 
 
-4. Play first and last 30 seconds of both videos to get an understanding of the content, paying close attention to any tape errors you may see
+4. Play first and last 30 seconds of both videos to get an understanding of the content, paying close attention to any tape errors you may see.  Once finished, move onto DVRescue and DVPlay.  
 
-5. Merging Files with DVRescue 
+###### Merging Files with DVRescue 
 
    * Run the following command in Terminal:
  
@@ -131,20 +131,20 @@
    dvrescue $drag_first_take_file_here -m $drag_file_output_file_here
 ```
 
-* dvrescue starts the command
-* Replace $drag_first_take_file_here with path to Take 1 of tape 
-	* Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_take1.dv
-* -m tells dvrescue to execute the merge command        
-* Replace $drag_file_output_file_here with intended file output name
-	* Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
-* Remember to change _take1.dv to _merge.dv
-	* If you don’t Take 1 will be erased and transfer will need to be redone 
+	* dvrescue starts the command
+	* Replace $drag_first_take_file_here with path to Take 1 of tape 
+		* Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_take1.dv
+	* -m tells dvrescue to execute the merge command        
+	* Replace $drag_file_output_file_here with intended file output name
+		* Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
+	* Remember to change _take1.dv to _merge.dv
+		* If you don’t Take 1 will be erased and transfer will need to be redone 
    
    * Wait for command to finish (can take a few minutes)
 
    * Confirm that merged file is same size as original files (some discretion) 
 
-6. DVPlay 
+###### DVPlay 
 
    * Run the following command in Terminal: 
 
@@ -152,10 +152,10 @@
       dvplay -x $drag_merged_file_here  
 ```
        
-* dvplay starts the command
-* -x tells the command to create JPEGs of every error
-* Replace $drag_merged_file_here with path to merged file 
-* Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
+	* dvplay starts the command
+	* -x tells the command to create JPEGs of every error
+	* Replace $drag_merged_file_here with path to merged file 
+	* Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
 
    * Wait for command to finish 
 
@@ -179,7 +179,7 @@
 
    * When in doubt, ask someone!  
 
-7. Mark folder with color to denote status and move onto next tape 
+* Mark folder with color to denote status and move onto next tape 
 
    * Pass - Green
 
@@ -187,29 +187,28 @@
 
    * Fail - Red
    
-8. Document findings in Airtable 
+###### After
 
-9. Get second opinions for problematic files.  If any files need to be retransfered, refer back to Transferring MiniDV section 
-
-10. If needed, use FFMPEG to create a small clip that best shows the errors seen
+* Document findings in Airtable 
+* Get second opinions for problematic files.  If any files need to be retransfered, refer back to Transferring MiniDV section 
+* If needed, use FFMPEG to create a small clip that best shows the errors seen
 
 ```
     ffmpeg -i FILE -c copy -f rawvideo -map 0:v:0 -ss 00:00:00 -to 00:00:00 FILE.title.dv
 ```
 
-   - ffmpeg = starts ffmpeg
-   - -i = input file 
-   - FILE = path to file that is being trimmed 
-   - -c = Codec name 
-   - copy = copies codec name 
-   - -f = force format 
-   - rawvideo = keeps Codec the same as original file 
-   - -map = manual control of stream selection in each output file 
-   - 0:v:0 = stream specifier (v matches all video streams)
-   - -ss = decodes but discards input until the timestamps reach position
-   - 00:00:00 -to 00:00:00 = timespan of clip 
-   - FILE.title.dv = name of final file and location to be saved to 
-
+	* ffmpeg = starts ffmpeg
+	* -i = input file 
+	* FILE = path to file that is being trimmed 
+	* -c = Codec name 
+	* copy = copies codec name 
+	* -f = force format 
+	* rawvideo = keeps Codec the same as original file 
+	* -map = manual control of stream selection in each output file 
+	* 0:v:0 = stream specifier (v matches all video streams)
+	* -ss = decodes but discards input until the timestamps reach position
+	* 00:00:00 -to 00:00:00 = timespan of clip 
+	* FILE.title.dv = name of final file and location to be saved to 
 
 ## Packaging and Verification
 
@@ -219,7 +218,7 @@ Once all files have passed QC, packaging and verification can begin
 
 ###### 1. Packaging 
 
-        * Run the following command in a new Terminal window:
+* Run the following command in a new Terminal window:
         
 ```
           dvpackager -v $drag_merged_file_here
