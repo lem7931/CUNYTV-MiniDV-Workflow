@@ -231,28 +231,31 @@ Once all files have passed QC, packaging and verification can begin
 
 ###### 2. Verification 
 
+1.  
 ```
 	 checksumpackage -c $package
 ``` 	
- 
+
+2.
 ```
          verifytree $package 
 ```
 
-* No capture file/submission documentation in the wrong place?
+3.  No capture file/submission documentation in the wrong place?
 	  
 ```
             aipupgrade $drag_list_of_packages_here
 ```
 
-* Will ask you what type of package, pick Preservation-Video 
+Will ask you what type of package, pick Preservation-Video 
 
+4.
 ```
 	 verifypackage -a (best run overnight) 
 ```
 
-* If any files fail, delete service file and youtube access copy 
-* Then create new ones:
+If any files fail, delete service file and youtube access copy 
+Then create new ones:
 
 ```
 	   makebroadcast $drag_package_here
@@ -262,26 +265,27 @@ Once all files have passed QC, packaging and verification can begin
                 makeyoutube $drag_package_here
 ```
 
-* Double-check:
+Double-check:
 	  
 	  
 ```
               verifypackage -a (overnight again)
 ```
 
-* Then update the checksum!  
+Then update the checksum!  
 
 ```
 	      checksumpackage -v $drag_package_here
 ```
 
-* Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating.  
+Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating.  
 
+5.
 ```
 	  collectionchecksum $drag_package_here
 ```
 
-* Run this on parent folders - gathers all checksums and creates a new manifest 
+Run this on parent folders - gathers all checksums and creates a new manifest 
 
 
 ## Resources:
