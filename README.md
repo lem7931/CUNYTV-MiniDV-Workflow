@@ -152,13 +152,10 @@
       dvplay -x $drag_merged_file_here  
 ```
        
-      * dvplay starts the command
-
-      * -x tells the command to create JPEGs of every error
-
-      * Replace $drag_merged_file_here with path to merged file 
-
-        * Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
+* dvplay starts the command
+* -x tells the command to create JPEGs of every error
+* Replace $drag_merged_file_here with path to merged file 
+* Example:  /Volumes/GDRIVE10A/DV-Cat/MDVB000005/MDV00445/MDV00445_merge.dv 
 
    * Wait for command to finish 
 
@@ -228,13 +225,10 @@ Once all files have passed QC, packaging and verification can begin
           dvpackager -v $drag_merged_file_here
 ```
 	 
-        * Make sure .mov file is slightly larger than DV file and that audio is in sync 
-
-          * Keep Take 1+2 xml 
-
-          * Keep new .mov 
-
-          * Keep Merged .dv
+* Make sure .mov file is slightly larger than DV file and that audio is in sync 
+* Keep Take 1+2 xml 
+* Keep new .mov 
+* Keep Merged .dv
 
    2. Verification 
 
@@ -246,21 +240,20 @@ Once all files have passed QC, packaging and verification can begin
          verifytree $package 
 ```
 
-          * No capture file/submission documentation in the wrong place?
+* No capture file/submission documentation in the wrong place?
 	  
 ```
             aipupgrade $drag_list_of_packages_here
 ```
 
-            * Will ask you what type of package, pick Preservation-Video 
+* Will ask you what type of package, pick Preservation-Video 
 
 ```
 	 verifypackage -a (best run overnight) 
 ```
 
-          * If any files fail, delete service file and youtube access copy 
-
-            * Then create new ones:
+* If any files fail, delete service file and youtube access copy 
+* Then create new ones:
 
 ```
 	   makebroadcast $drag_package_here
@@ -270,26 +263,26 @@ Once all files have passed QC, packaging and verification can begin
                 makeyoutube $drag_package_here
 ```
 
-          * Double-check:
+* Double-check:
 	  
 	  
 ```
               verifypackage -a (overnight again)
 ```
 
-          * Then update the checksum!  
+* Then update the checksum!  
 
 ```
 	      checksumpackage -v $drag_package_here
 ```
 
-            * Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating.  
+* Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating.  
 
 ```
 	  collectionchecksum $drag_package_here
 ```
 
-          * Run this on parent folders - gathers all checksums and creates a new manifest 
+* Run this on parent folders - gathers all checksums and creates a new manifest 
 
 
 ## Resources:
