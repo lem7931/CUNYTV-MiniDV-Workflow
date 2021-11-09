@@ -21,14 +21,15 @@
 
 ###### Definitions:
 
-DV:  Stands for digital video.  Format includes Digital Video Cassette, Digital 8, MiniDV, DVCA, and DVCPRO.  This format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  
-dvrescue:  “Supports improving DV files that have already been created by allowing such files to be assessed, so that the software may selectively retry portions of the tape and incorporate any improvements into the existing file.”
+* DV:  Stands for digital video.  Format includes Digital Video Cassette, Digital 8, MiniDV, DVCA, and DVCPRO.  This format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  
 
-dvmerge:  “Script that takes multiple transfers of the same tape containing errors and combines them to create one file with the best information available for each problematic frame. Part of dvrescue” 
+* dvrescue:  “Supports improving DV files that have already been created by allowing such files to be assessed, so that the software may selectively retry portions of the tape and incorporate any improvements into the existing file.”
 
-dvplay:  “Script that plays back and visualizes the DV errors as a stack of images. Running with the -x flag will produce JPEGs instead of just playing them. Requires FFplay.”
+* dvmerge:  “Script that takes multiple transfers of the same tape containing errors and combines them to create one file with the best information available for each problematic frame. Part of dvrescue” 
 
-ffmpeg:  “Open-source software able to able to decode, encode, transcode, mux, demux, stream, filter and play video/audio”
+* dvplay:  “Script that plays back and visualizes the DV errors as a stack of images. Running with the -x flag will produce JPEGs instead of just playing them. Requires FFplay.”
+
+* ffmpeg:  “Open-source software able to able to decode, encode, transcode, mux, demux, stream, filter and play video/audio”
 
 
 ###### Things to keep in mind
@@ -257,9 +258,9 @@ No capture file/submission documentation in the wrong place?  Run this command:
 
 Will ask you what type of package, pick Preservation-Video 
 
-Next, run this command:
+Next, run this command (best run overnight as it takes a bit of time):
 ```
-	 verifypackage -a (best run overnight) 
+	 verifypackage -a  
 ```
 
 If any files fail, delete service file and youtube access copy 
