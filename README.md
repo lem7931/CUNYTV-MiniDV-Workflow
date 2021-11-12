@@ -253,38 +253,41 @@ Next, run this command in the same terminal window
 No capture file/submission documentation in the wrong place?  Run this command:
 	  
 ```
-            aipupgrade $drag_list_of_packages_here
+         aipupgrade $drag_list_of_packages_here
 ```
 
 Will ask you what type of package, pick Preservation-Video 
 
-Next, run this command (best run overnight as it takes a bit of time):
+Next, run this command to check the audio levels (best to run this overnight as it takes a bit of time):
 ```
 	 verifypackage -a  
 ```
 
-If any files fail, delete service file and youtube access copy 
-Then create new ones:
+If any files fail, delete Service file and Youtube Access Copy from package  
+
+Then create new ones using these two commands :
 
 ```
 	   makebroadcast $drag_package_here
 ```
+For creating new Service files 
 
 ```
-                makeyoutube $drag_package_here
+           makeyoutube $drag_package_here
 ```
+For creating new Youtube Access copies 
 
-Double-check:
+Double-check to make sure the new audio passes by verifying the packages overnight:
 	  
 	  
 ```
-              verifypackage -a (overnight again)
+           verifypackage -a 
 ```
 
 Then update the checksum!  
 
 ```
-	      checksumpackage -v $drag_package_here
+	   checksumpackage -v $drag_package_here
 ```
 
 Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating.  
