@@ -19,6 +19,11 @@
  
   5.  Verification
 
+###### Equipment Used
+* Sony DSR-45
+* Sony HVR-M15U
+* Mac Pro (Late 2013), running MacOS Mojave 
+
 ###### Definitions:
 
 * DV:  Stands for digital video.  Format includes Digital Video Cassette, Digital 8, MiniDV, DVCA, and DVCPRO.  This format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  
