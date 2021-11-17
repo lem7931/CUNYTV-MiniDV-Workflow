@@ -89,12 +89,12 @@
 ```
 ./dvc
 ```
-Script for two MDV transfers
+*Script for two MDV transfers*
 
 ```
 ./dvc_2  
 ```
-Script for only one MDV transfer 
+*Script for only one MDV transfer*
 
 3. Select an input device by number or enter ‘S’ to check the status of each device
    * [0] DV-VCR (Sony HVR-M15U)
@@ -243,6 +243,8 @@ Keep Take 1+2 xml
 * Keep new .mov 
 * Keep Merged .dv
 
+*Note: DVPackager may create multiple files if there is a change in aspect ratio at any point during the content.  If multiple files are created after running dvpackager -v, assess sizes/general content to make sure this is the case* 
+
 ###### Verification 
 
 Run the following command in a new Terminal window:  
@@ -295,7 +297,7 @@ Then update the checksum!
 	   checksumpackage -v $drag_package_here
 ```
 
-Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating.  
+*Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating*   
 
 Finally, let's create a manifest with all the checksums!  
 ```
