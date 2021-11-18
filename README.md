@@ -3,7 +3,8 @@
 
 
 ###### This workflows covers the following:
-  1.  Before transferring
+
+  1.  [Before transferring](before-transferring) 
 
   2.  Transferring MiniDV
 
@@ -56,6 +57,7 @@
 
 
 ## Before Transferring MiniDV 
+(before-transferring) 
 
 ###### Overview - This process establishes what tapes are being digitized and their condition.  It also helps you stay organized!  
 
