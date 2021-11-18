@@ -26,7 +26,12 @@
 
 ###### Definitions:
 
-* DV:  Stands for digital video.  Format includes Digital Video Cassette, Digital 8, MiniDV, DVCA, and DVCPRO.  This format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  
+* DV:  Stands for digital video.  his format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  Includes:
+	* Digital Video Cassette
+	* Digital 8
+	* MiniDV
+	* DVCA
+	* DVCPRO
 
 * dvrescue:  “Supports improving DV files that have already been created by allowing such files to be assessed, so that the software may selectively retry portions of the tape and incorporate any improvements into the existing file.”
 
