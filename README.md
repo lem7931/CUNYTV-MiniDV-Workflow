@@ -194,7 +194,7 @@
 
       * Less than 5 errors - PASS 
 
-   * Reference AVAA - https://www.avartifactatlas.com/formats/dv.html 
+   * Reference [AVAA](https://www.avartifactatlas.com/formats/dv.html) 
 
    * When in doubt, ask someone!  
 
@@ -321,11 +321,11 @@ Run this on parent folders - gathers all checksums and creates a new manifest
 
 ## Resources:
 
-   * DVRescue Github - https://github.com/mipops/dvrescue 
-   * DVRescue - https://mediaarea.net/DVRescue 
-   * CUNY TV Media Micro Services - https://github.com/mediamicroservices/mm 
-   * DVRescue - https://mipops.github.io/dvrescue/index.html 
-   * A/V Artifact Atlas - https://www.avartifactatlas.com 
-   * ffmprovisr - https://amiaopensource.github.io/ffmprovisr/
-   * Command Line Crash Course - https://learncodethehardway.org 
-   * NYPL Media Preservation Documentation Portal - https://nypl.github.io/ami-preservation/
+   * [DVRescue Github](https://github.com/mipops/dvrescue)  
+   * [DVRescue Website](https://mediaarea.net/DVRescue) 
+   * [CUNY TV Media Micro Services](https://github.com/mediamicroservices/mm) 
+   * [DVRescue Index](https://mipops.github.io/dvrescue/index.html)
+   * [A/V Artifact Atlas](https://www.avartifactatlas.com)
+   * [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/)
+   * [Command Line Crash Course](https://learncodethehardway.org)
+   * [NYPL Media Preservation Documentation Portal](https://nypl.github.io/ami-preservation/)
