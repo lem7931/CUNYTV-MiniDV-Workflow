@@ -289,12 +289,12 @@ Then create new ones using these two commands :
 ```
 	   makebroadcast $drag_package_here
 ```
-For creating new Service files 
+*For creating new service files* 
 
 ```
            makeyoutube $drag_package_here
 ```
-For creating new Youtube Access copies 
+*For creating new Youtube Access copies* 
 
 Double-check to make sure the new audio passes by verifying the packages overnight:
 	  
@@ -309,14 +309,14 @@ Then update the checksum!
 	   checksumpackage -v $drag_package_here
 ```
 
-*Terminal will yell at you because the checksum does not match!  But that is to be expected because we got rid of things and are now updating*   
+*Terminal will yell at you because the checksum does not match!  But that is to be expected because we made changes to the packages*   
 
 Finally, let's create a manifest with all the checksums!  
 ```
 	  collectionchecksum $drag_package_here
 ```
 
-Run this on parent folders - gathers all checksums and creates a new manifest 
+*Run this on parent folders - gathers all checksums and creates a new manifest*
 
 
 ## Resources:
