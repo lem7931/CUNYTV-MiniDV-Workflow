@@ -6,19 +6,19 @@
 
   1.  [Before transferring](before-transferring) 
 
-  2.  Transferring MiniDV
+  2.  [Transferring](transferring) 
 
-  3.  Quality Control using 
+  3.  [Quality Control using](quality-control) 
     
-		* DVRescue
+		* [DVRescue](dvrescue)
     
-		* DVPlay
+		* [DVPlay](dvplay)
     
-		* FFMPEG 
+		* [FFMPEG](ffmpeg) 
 
-  4.  Packaging
+  4.  [Packaging](packaging) 
  
-  5.  Verification
+  5.  [Verification](verification) 
 
 ###### Equipment Used
 * Sony DSR-45
