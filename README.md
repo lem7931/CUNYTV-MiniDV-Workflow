@@ -107,6 +107,7 @@
 5. Add output folder and press enter
    * Where you want these transfers to be saved 
    * Drag + drop location directly into Terminal window 
+
 6. Transfer will begin.  Time varies based on tape contents and the command run.
 
 7. Once tape has finished and is fully rewound, double check the size of the file.  
