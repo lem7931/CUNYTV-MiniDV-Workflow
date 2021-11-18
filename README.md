@@ -257,11 +257,17 @@ Run the following command in a new Terminal window:
 ```
 	 checksumpackage -c $package
 ``` 	
+*This script verifies a package's checksum* 
 
-Next, run this command in the same terminal window 
+If there are any mismatches in the checksums, flag the faulty file and investigate.  
+
+Once all checksums have been verified, run the next command in the same terminal window 
 ```
          verifytree $package 
 ```
+*This script verifies the contents of the package and will fail if anything is missing* 
+
+For example:
 
 No capture file/submission documentation in the wrong place?  Run this command:
 	  
