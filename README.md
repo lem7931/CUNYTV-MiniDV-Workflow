@@ -4,21 +4,21 @@
 
 ###### This workflows covers the following:
 
-  1.  [Before transferring](before-transferring) 
+  1.  [Before transferring](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#before-transferring-minidv) 
 
-  2.  [Transferring](transferring) 
+  2.  [Transferring](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#transferring-minidv) 
 
-  3.  [Quality Control using](quality-control) 
+  3.  [Quality Control using](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#quality-control--dvrescue--dvplay) 
     
-		* [DVRescue](dvrescue)
+		* [DVRescue](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#merging-files-with-dvrescue)
     
-		* [DVPlay](dvplay)
+		* [DVPlay](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#dvplay)
     
-		* [FFMPEG](ffmpeg) 
+		* [FFMPEG](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#after) 
 
-  4.  [Packaging](packaging) 
+  4.  [Packaging](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#packaging) 
  
-  5.  [Verification](verification) 
+  5.  [Verification](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#verification) 
 
 ###### Equipment Used
 * Sony DSR-45
