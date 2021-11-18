@@ -56,8 +56,8 @@
 * When in doubt, ask for help! 
 
 
-## Before Transferring MiniDV 
-(before-transferring) 
+## [Before Transferring MiniDV](before-transferring)  
+
 
 ###### Overview - This process establishes what tapes are being digitized and their condition.  It also helps you stay organized!  
 
