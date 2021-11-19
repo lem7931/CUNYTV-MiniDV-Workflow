@@ -56,7 +56,7 @@
 * When in doubt, ask for help! 
 
 
-## [Before Transferring MiniDV](before-transferring)  
+## [Before Transferring MiniDV](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#before-transferring-minidv)  
 
 
 ###### Overview - This process establishes what tapes are being digitized and their condition.  It also helps you stay organized!  
@@ -85,7 +85,7 @@
    * If any tapes appear in bad condition, set aside for further assessment.  DO NOT try to transfer or play them back.  
 
 
-## Transferring MiniDV
+## [Transferring MiniDV](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#transferring-minidv) 
 
 ###### Overview - This process takes the contents of the MiniDV tape and transfers it onto a computer 
 
@@ -126,7 +126,7 @@
 9. Repeat until the batch is done and then move onto the next phase.
 
 
-## Quality Control ~ DVRescue + DVPlay 
+## [Quality Control ~ DVRescue + DVPlay](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#quality-control--dvrescue--dvplay) 
 
 ###### Overview - This process merges two MDV transfers into one file and then assesses any errors that may be present in the file.  
 
@@ -144,7 +144,7 @@
 
 4. Play first and last 30 seconds of both videos to get an understanding of the content, paying close attention to any tape errors you may see.  Once finished, move onto DVRescue and DVPlay.  
 
-###### Merging Files with DVRescue 
+###### [Merging Files with DVRescue](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#merging-files-with-dvrescue)  
 
    * Run the following command in Terminal:
  
@@ -165,7 +165,7 @@
 
    * Confirm that merged file is same size as original files (some discretion) 
 
-###### DVPlay 
+###### [DVPlay](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#dvplay) 
 
    * Run the following command in Terminal: 
 
@@ -208,7 +208,7 @@
 
    * Fail - Red
    
-###### After
+###### [After](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#after) 
 
 * Document findings in Airtable 
 * Get second opinions for problematic files.  If any files need to be retransfered, refer back to Transferring MiniDV section 
@@ -237,7 +237,7 @@
 
 Once all files have passed QC, packaging and verification can begin
 
-###### Packaging 
+###### [Packaging](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#packaging)  
 
 Run the following command in a new Terminal window:
         
@@ -253,7 +253,7 @@ Keep Take 1+2 xml
 
 *Note: DVPackager may create multiple files if there is a change in aspect ratio at any point during the content.  If multiple files are created after running dvpackager -v, assess sizes/general content to make sure this is the case* 
 
-###### Verification 
+###### [Verification](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#verification)  
 
 Run the following command in a new Terminal window:  
 ```
