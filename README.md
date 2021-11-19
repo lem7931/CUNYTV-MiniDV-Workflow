@@ -28,19 +28,19 @@
 ###### Definitions:
 
 * DV:  Stands for digital video.  his format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  Includes:
-	* Digital Video Cassette
-	* Digital 8
 	* MiniDV
-	* DVCA
-	* DVCPRO
+	* HDV
+	* DVCAM
+	* DVCPro
+	* DVCPro HD
 
-* dvrescue:  “Supports improving DV files that have already been created by allowing such files to be assessed, so that the software may selectively retry portions of the tape and incorporate any improvements into the existing file.”
+* [dvrescue](https://mediaarea.net/DVRescue):  “Supports improving DV files that have already been created by allowing such files to be assessed, so that the software may selectively retry portions of the tape and incorporate any improvements into the existing file.”
 
-* dvmerge:  “Script that takes multiple transfers of the same tape containing errors and combines them to create one file with the best information available for each problematic frame. Part of dvrescue” 
+* [dvmerge](https://github.com/mipops/dvrescue#additional-tools):  “Script that takes multiple transfers of the same tape containing errors and combines them to create one file with the best information available for each problematic frame. Part of dvrescue” 
 
-* dvplay:  “Script that plays back and visualizes the DV errors as a stack of images. Running with the -x flag will produce JPEGs instead of just playing them. Requires FFplay.”
+* [dvplay](https://github.com/mipops/dvrescue#additional-tools):  “Script that plays back and visualizes the DV errors as a stack of images. Running with the -x flag will produce JPEGs instead of just playing them. Requires FFplay.”
 
-* ffmpeg:  “Open-source software able to able to decode, encode, transcode, mux, demux, stream, filter and play video/audio”
+* [ffmpeg](https://www.ffmpeg.org/about.html#:~:text=FFmpeg%20is%20the%20leading%20multimedia,humans%20and%20machines%20have%20created):  “Open-source software able to able to decode, encode, transcode, mux, demux, stream, filter and play video/audio”
 
 
 ###### Things to keep in mind
