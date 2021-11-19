@@ -27,7 +27,7 @@
 
 ###### Definitions:
 
-* [DV](https://mipops.github.io/dvrescue/sections/dv_formats.html):  Stands for digital video.  his format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  Includes:
+* [DV](https://mipops.github.io/dvrescue/sections/dv_formats.html):  Stands for digital video.  This format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  Format includes:
 	* MiniDV
 	* HDV
 	* DVCAM
@@ -211,7 +211,7 @@
 ###### [After](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#after) 
 
 * Document findings in Airtable 
-* Get second opinions for problematic files.  If any files need to be retransfered, refer back to Transferring MiniDV section 
+* Get second opinions for problematic files.  If any files need to be retransfered, refer back to [Transferring MiniDV](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#transferring-minidv) section 
 * If needed, use FFMPEG to create a small clip that best shows the errors seen
 
 ```
