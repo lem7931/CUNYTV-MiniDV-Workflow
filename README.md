@@ -139,7 +139,7 @@
    * Two .xml files 
 
 3. Double-check sizes of two files to be merged
-   * If one file is significantly bigger than the other, mark as SUS skip to last step of this section
+   * If one file is significantly bigger than the other, mark as SUS skip to [last step](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#after) of this section
    * If only bigger by a small amount (no more than .1 MB) then continue 
 
 4. Play first and last 30 seconds of both videos to get an understanding of the content, paying close attention to any tape errors you may see.  Once finished, move onto DVRescue and DVPlay.  
