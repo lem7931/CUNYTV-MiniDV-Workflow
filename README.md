@@ -21,8 +21,8 @@
   5.  [Verification](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#verification) 
 
 ###### Equipment Used
-* Sony DSR-45
-* Sony HVR-M15U
+* [Sony DSR-45](https://github.com/lem7931/CUNYTV-MiniDV-Workflow/blob/main/assets/Sony%20DSR-45%20manual.pdf)  
+* [Sony HVR-M15U](https://github.com/lem7931/CUNYTV-MiniDV-Workflow/blob/main/assets/Sony%20HVR-M15U%20manual.pdf) 
 * Mac Pro (Late 2013), running MacOS Mojave 
 
 ###### Definitions:
