@@ -61,7 +61,7 @@
 
 ###### Overview - This process establishes what tapes are being digitized and their condition.  It also helps you stay organized!  
 
-1. Create new Airtable for tracking metadata on each item.  Table should include:
+1. Create new [Airtable](https://airtable.com) for tracking metadata on each item.  Table should include:
    * Format ID
    * Status
    * Drive 
@@ -96,12 +96,12 @@
 ```
 ./dvc
 ```
-*Script for two MDV transfers*
+[*Script for two MDV transfers*](https://github.com/lem7931/CUNYTV-MiniDV-Workflow/blob/main/assets/dvc)
 
 ```
 ./dvc_2  
 ```
-*Script for only one MDV transfer*
+[*Script for only one MDV transfer*](https://github.com/lem7931/CUNYTV-MiniDV-Workflow/blob/main/assets/dvc_2.sh) 
 
 3. Select an input device by number or enter ‘S’ to check the status of each device
    * [0] DV-VCR (Sony HVR-M15U)
