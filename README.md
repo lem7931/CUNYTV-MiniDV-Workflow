@@ -27,7 +27,7 @@
 
 ###### Definitions:
 
-* DV:  Stands for digital video.  his format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  Includes:
+* [DV](https://mipops.github.io/dvrescue/sections/dv_formats.html):  Stands for digital video.  his format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  Includes:
 	* MiniDV
 	* HDV
 	* DVCAM
