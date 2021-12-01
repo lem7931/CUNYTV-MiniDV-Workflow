@@ -42,6 +42,8 @@
 
 * [ffmpeg](https://www.ffmpeg.org/about.html#:~:text=FFmpeg%20is%20the%20leading%20multimedia,humans%20and%20machines%20have%20created):  “Open-source software able to able to decode, encode, transcode, mux, demux, stream, filter and play video/audio”
 
+* [Terminal](https://en.wikipedia.org/wiki/Terminal_(macOS)): "Application provides text-based access to the operating system, in contrast to the mostly graphical nature of the user experience of macOS, by providing a command-line interface to the operating system"
+
 
 ###### Things to keep in mind
 
