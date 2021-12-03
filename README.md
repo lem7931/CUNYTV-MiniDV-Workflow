@@ -315,7 +315,7 @@ Then update the checksum!
 
 *Terminal will yell at you because the checksum does not match!  But that is to be expected because we made changes to the packages*   
 
-Finally, let's create a manifest with all the checksums!  
+Finally, let's create a manifest with all the checksums!  Move all files out of parent folders and then run:
 ```
 	  collectionchecksum $drag_package_here
 ```
