@@ -57,6 +57,17 @@
 
 * When in doubt, ask for help! 
 
+###### Additional Resources:
+
+   * [DVRescue Github](https://github.com/mipops/dvrescue)  
+   * [DVRescue Website](https://mediaarea.net/DVRescue) 
+   * [CUNY TV Media Micro Services](https://github.com/mediamicroservices/mm) 
+   * [DVRescue Index](https://mipops.github.io/dvrescue/index.html)
+   * [A/V Artifact Atlas](https://www.avartifactatlas.com)
+   * [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/)
+   * [Command Line Crash Course](https://learncodethehardway.org)
+   * [NYPL Media Preservation Documentation Portal](https://nypl.github.io/ami-preservation/)
+
 
 ## [Before Transferring MiniDV](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#before-transferring-minidv)  
 
@@ -321,15 +332,3 @@ Finally, let's create a manifest with all the checksums!  Move all packages out 
 ```
 
 *Command gathers all checksums and creates a new manifest*
-
-
-## Resources:
-
-   * [DVRescue Github](https://github.com/mipops/dvrescue)  
-   * [DVRescue Website](https://mediaarea.net/DVRescue) 
-   * [CUNY TV Media Micro Services](https://github.com/mediamicroservices/mm) 
-   * [DVRescue Index](https://mipops.github.io/dvrescue/index.html)
-   * [A/V Artifact Atlas](https://www.avartifactatlas.com)
-   * [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/)
-   * [Command Line Crash Course](https://learncodethehardway.org)
-   * [NYPL Media Preservation Documentation Portal](https://nypl.github.io/ami-preservation/)
