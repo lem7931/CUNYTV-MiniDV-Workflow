@@ -25,6 +25,17 @@
 * [Sony HVR-M15U](https://github.com/lem7931/CUNYTV-MiniDV-Workflow/blob/main/assets/Sony%20HVR-M15U%20manual.pdf) 
 * Mac Pro (Late 2013), running MacOS Mojave 
 
+###### Final Package Contents
+Preservation Copy
+* .DV
+* .MKV
+
+Service Copy
+* .MOV
+
+Access Copy 
+* .MP4 
+
 ###### Definitions:
 
 * [DV](https://mipops.github.io/dvrescue/sections/dv_formats.html):  Stands for digital video.  This format is unique because the content, despite being digital, is still stored on magnetic tape.  Since the content is already digital, digitization will not be occurring but rather a transfer of the content.  Format includes:
