@@ -146,10 +146,11 @@
 1. Navigate to folder you want to work in using the Terminal 
 
 2. Create new folder for each tape and its associated files to live in 
-   * Should have:
-   * Two .dv files which will be subsequently merged together
-   * Two .vtt files
-   * Two .xml files 
+ 
+Folder should have:
+
+![image](https://user-images.githubusercontent.com/74999102/145603445-9b76f23b-9c52-4547-884f-f27a628c45da.png)
+
 
 3. Double-check sizes of two files to be merged
    * If one file is significantly bigger than the other, mark as SUS skip to [last step](https://github.com/lem7931/CUNYTV-MiniDV-Workflow#after) of this section
